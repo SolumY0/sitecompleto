@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Shrikhand&display=swap');
+
+:root{
+    --fonte-padrao: "Nunito", sans-serif;
+    --fonte-legal: "Shrikhand", cursive;
+    --cor1:rgb(211, 128, 192);
+    --cor2:rgb(202, 151, 188);
+    --cor3:rgb(222, 187, 213);
+    --cor4:#a44578;
+    --cor5:#40132b;
+    --cor6:rgb(242, 234, 240);
+    --cor7:#ce6ca1;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor6);
+}
+
+header{
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3));
+}
+
+header h1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: var(--fonte-legal);
+    font-variant: small-caps;
+    font-size: 6vw;
+    color: var(--cor4);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.608);
+}
+
+header p{
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: var(--cor4);
+}
+
+header a{
+    text-decoration: none;
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+header a:hover{
+    text-decoration: underline
+}
+
+header a #produtoBotao{
+    border: none;
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 5px;
+    width: 10%;
+    background-color: var(--cor7);
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.344);
+    margin: 20px;
+}
+
+header a #botao{
+    background-color: var(--cor7);
+    border: none;
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 5px;
+    width: 10%;
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.344);
+    margin: 20px;
+}
+
+header a #quizBotao{
+    background-color: var(--cor7);
+    border: none;
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 5px;
+    width: 10%;
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.344);
+    margin: 20px;
+}
+
+header #menu{  
+    margin-right: 30px;
+}
+
+section h2{
+    margin: 40px;
+    font-family: var(--fonte-legal);
+    font-size: 50px;
+    color: var(--cor4);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.248);
+}
+
+section p{
+    text-align: justify;
+    margin: 30px;
+    font-size: 25px;
+}
+
+section h3{
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.89);
+    padding: 200px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.486);
+}
+
+section.imagem{
+    background-attachment: fixed;
+    margin: 30px;
+}
+
+section#img01{
+    background-image: url('img/torta.png');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img02{
+    background-image: url('img/roscas.png');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#rodape{
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3));
+}
+
+#rodape h2{
+    font-family: var(--fonte-legal);
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    color: var(--cor4);
+}
+
+#rodape p{
+    padding-bottom: 20px;
+    font-family: var(--fonte-padrao);
+    color: var(--cor4);
+    font-size: 30px;
+    text-align: center;
+}
+
+#rodape p a{
+    text-decoration: none;
+    color: var(--fonte-padrao);
+}
+
+#rodape p a:hover{
+    text-decoration: underline;
+}
+
+#contatoCaixa{
+    background-color: var(--cor3);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    width: 510px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.403);
+}
+
+#contatoCaixa p{
+    padding: 20px;
+    text-align: center;
+    color: var(--cor4);
+}
+
+#contatoCaixa a{
+    text-decoration: none;
+    color: var(--cor4);
+}
+
+#contatoCaixa a:hover{
+    text-decoration: underline;
+}
+
+#meuForm{
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 480px;
+    height: 225px;
+    /* Para vera asbordas do formulário */
+    padding: 1em;
+    border-radius: 1em;
+    background-color: var(--cor3);
+    margin-top: 90px;
+    color: var(--cor5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.403);
+}
+
+fieldset{
+    border: none;
+}
+
+#meuForm fieldset + fieldset{
+    margin-top: 5px;
+}
+
+.label{
+    /* Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    margin: 10px;
+}
+
+.input, textarea{
+    font: 1em sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid var(--cor5);
+    transition: 0.5s;
+    background-color: rgb(223, 223, 223);
+}
+
+.input:hover, textarea:hover{
+    background-color: white;
+}
+
+.input:focus, textarea:focus{
+    /* Dar um pouco de diferença aos elementos ativos */
+    border-color: #000000;
+}
+
+textarea{
+    /* Para alinhar corretamente os campos de texto de várias linhas com sua label */
+    vertical-align: top;
+
+    /* Para dar espaço suficiente para digitar algum texto */
+    height: 5em;
+
+    /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente */
+    resize: vertical;
+}
+
+.button{
+    /* Para posicionar os botões para a mesma posição dos campos de texto */
+    padding-left: 90px; /* mesmo tamanho que os elementos do tipo label */
+    padding-top: 15px;
+}
+
+#botaoEnviar{
+    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de textos */
+    margin-left: 4.5em;
+    color: white;
+    background-color: var(--cor4);
+    border-radius: 5px;
+    font-size: 15px; 
+    padding: 5px;
+    border: none;
+    font-family: var(--fonte-padrao);
+    transition: 0.5s;
+}
+
+#botaoEnviar:hover{
+    transform: scale(1.05);
+}
+
+section video{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+ul{
+    list-style-position: inside;
+    list-style-type: '';
+    columns: 4;
+    line-height: 1.6em; 
+    margin-left: 160px;
+    font-size: 25px;
+}
+
+#produtos{
+    text-align: center;
+}
+
+audio{
+    margin-left: 615px;
+    margin-top: 30px;
+}
+
+main #precoContato{
+    text-align: center;
+    font-size: 30px;
+    color: var(--cor5);
+    margin: 20px;
+}
+
+.quiz-section{
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    margin: 20px auto; 
+    
+}
+
+h5{
+    text-align: justify;
+    padding: 10px;
+    color: var(--cor5);
+    font-size: 20px;
+}
+
+h4{
+    text-align: center;
+    color: var(--cor5);
+    font-size: 25px;
+}
+
+.question{
+    margin-bottom: 20px;
+}
+
+.buttonQuiz{
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(74, 26, 55);
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttonQuiz:hover{
+    background-color: rgb(88, 29, 59);
+}
+
+.buttonQuiz:disabled{
+    background-color: rgb(96, 89, 103);
+    cursor: not-allowed;
+}
+
+#result{
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
